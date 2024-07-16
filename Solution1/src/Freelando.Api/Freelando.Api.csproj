@@ -28,8 +28,4 @@
     <ProjectReference Include="..\Freelando.Modelos\Freelando.Modelos.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Converters\" />
-  </ItemGroup>
-
 </Project>
