@@ -24,7 +24,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Freelando.Dados\Freelando.Dados.csproj" />
+	  <ProjectReference Include="..\..\Freelando.Dados\Freelando.Dados.csproj" />
     <ProjectReference Include="..\Freelando.Modelos\Freelando.Modelos.csproj" />
   </ItemGroup>
 

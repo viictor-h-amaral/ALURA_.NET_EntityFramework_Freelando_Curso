@@ -1,4 +1,6 @@
 using Freelando.Api.Endpoints;
+using Freelando.Dados;
+using Microsoft.EntityFrameworkCore;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -6,6 +8,10 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
+builder.Services.AddDbContext<FreelandoContext>((options) =>
+{
+    options.UseSqlServer(builder.Configuration["ConnectionStrings:DefaultConnection"]);
+});
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
